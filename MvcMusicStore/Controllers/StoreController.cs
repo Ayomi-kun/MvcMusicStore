@@ -25,7 +25,7 @@ namespace MvcMusicStore.Controllers
         }
         public string Details(int id)   
         {
-            string message = "Store.Details, ID = "+ id;
+            string message = HttpUtility.HtmlDecode("Store.Details, ID = "+ id);
             return message;
         }
 	}
