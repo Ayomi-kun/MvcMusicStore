@@ -31,9 +31,5 @@ namespace MvcMusicStore.Controllers
         {
             return View();
         }
-        public ActionResult bola()
-        {
-            return View();
-        }
     }
 }
