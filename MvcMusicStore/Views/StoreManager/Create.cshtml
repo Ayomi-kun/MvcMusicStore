@@ -19,8 +19,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.GenreId, "GenreId", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @*@Html.DropDownList("GenreId", String.Empty)*@
-                @Html.EditorFor(model => model.GenreId)
+                @Html.DropDownList("GenreId", String.Empty)
+                 @*@Html.EditorFor(model => model.GenreId)*@
                 @Html.ValidationMessageFor(model => model.GenreId)
             </div>
         </div>
@@ -28,8 +28,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ArtistId, "ArtistId", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @*@Html.DropDownList("ArtistId", String.Empty)*@
-                @Html.EditorFor(model => model.ArtistId)
+                @Html.DropDownList("ArtistId", String.Empty)
+                @*@Html.EditorFor(model => model.ArtistId)*@
                 @Html.ValidationMessageFor(model => model.ArtistId)
             </div>
         </div>
