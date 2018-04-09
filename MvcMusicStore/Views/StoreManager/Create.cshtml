@@ -20,7 +20,7 @@
             @Html.LabelFor(model => model.GenreId, "GenreId", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @*@Html.DropDownList("GenreId", String.Empty)*@
-                @Html.DropDownList("GenreId", "1")
+                @Html.EditorFor(model => model.GenreId)
                 @Html.ValidationMessageFor(model => model.GenreId)
             </div>
         </div>
