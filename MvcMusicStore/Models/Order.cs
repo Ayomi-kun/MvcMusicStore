@@ -12,10 +12,10 @@ namespace MvcMusicStore.Models
         public DateTime OrderDate { get; set; }
         public string Username { get; set; }
         [Required]
-        [StringLength (160)]
+        [StringLength (160,MinimumLength=3)]
         public string FirstName { get; set; }
         [Required]
-        [StringLength(160)]
+        [StringLength (160,MinimumLength=3)]
         public string LastName { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
