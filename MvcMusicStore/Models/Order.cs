@@ -23,6 +23,7 @@ namespace MvcMusicStore.Models
         public string PostalCode { get; set; }
         public string Country { get; set; }
         public string Phone { get; set; }
+        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+ \. [A-za-z]{2,4}")]
         public string Email { get; set; }
         public decimal Total { get; set; }
        // public List<OrderDetail> OrderDetail { get; set; }
