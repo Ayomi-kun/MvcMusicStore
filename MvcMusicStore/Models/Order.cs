@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace MvcMusicStore.Models
 {
@@ -10,6 +11,7 @@ namespace MvcMusicStore.Models
     {
         public int OrderId { get; set; }
         public DateTime OrderDate { get; set; }
+        
         public string Username { get; set; }
         [Required]
         [StringLength (160,MinimumLength=3)]
