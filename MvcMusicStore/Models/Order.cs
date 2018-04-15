@@ -11,7 +11,7 @@ namespace MvcMusicStore.Models
     {
         public int OrderId { get; set; }
         public DateTime OrderDate { get; set; }
-        
+        [Remote ("CheckUserName", "Account")]
         public string Username { get; set; }
         [Required]
         [StringLength (160,MinimumLength=3)]
@@ -25,7 +25,7 @@ namespace MvcMusicStore.Models
         public string PostalCode { get; set; }
         public string Country { get; set; }
         public string Phone { get; set; }
-        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+ \. [A-za-z]{2,4}")]
+        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+ \. [A-za-z]{2,4}", ErrorMessage="{0} does not look like a valid {0} address.")]
         public string Email { get; set; }
         public decimal Total { get; set; }
        // public List<OrderDetail> OrderDetail { get; set; }
