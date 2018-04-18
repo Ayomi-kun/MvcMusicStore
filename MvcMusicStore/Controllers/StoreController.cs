@@ -10,15 +10,15 @@ namespace MvcMusicStore.Controllers
     {
         //
         // GET: /Store/
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
-        public string Index()
+        public ActionResult Index()
         {
-            return "Hello from Store.Index()";
+            return View();
         }
-        public string Browse(string genre)
+        //public string Index()
+        //{
+        //    return "Hello from Store.Index()";
+        //}
+        public string browse(string genre)
         {
             string message = HttpUtility.HtmlEncode("Store.Browse, Genre = " + genre);
             return message;
