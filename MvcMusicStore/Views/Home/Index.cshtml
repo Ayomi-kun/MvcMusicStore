@@ -9,17 +9,17 @@
     <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
 </div>
 
-@*@section scripts{
+@section scripts{
     @if (ViewBag.UserName != null)
     {
         <script type="text/javascript">
             $(function () {
-                var msg = 'Welcome, @ViewBag.UserNamw!';
+                var msg = 'Welcome, @ViewBag.UserName!';
                 $("#welcome-message").html(msg).Hide().show('slow');
             });
         </script>
     }
-}*@
+}
 
 @*<div class="row">
     <div class="col-md-4">
