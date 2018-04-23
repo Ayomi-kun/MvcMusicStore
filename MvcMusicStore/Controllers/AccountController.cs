@@ -29,7 +29,8 @@ namespace MvcMusicStore.Controllers
 
         //
         // GET: /Account/Login
-        [RequireHttps]
+        //[RequireHttps]
+        // remember to uncomment the above for safe website.
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {

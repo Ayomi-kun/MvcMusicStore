@@ -42,3 +42,5 @@ C:\Users\ASUS\documents\visual studio 2013\Projects\MvcMusicStore\MvcMusicStore.
 C:\Users\ASUS\documents\visual studio 2013\Projects\MvcMusicStore\MvcMusicStore.Tests\obj\Debug\MvcMusicStore.Tests.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\documents\visual studio 2013\Projects\MvcMusicStore\MvcMusicStore.Tests\obj\Debug\MvcMusicStore.Tests.dll
 C:\Users\ASUS\documents\visual studio 2013\Projects\MvcMusicStore\MvcMusicStore.Tests\obj\Debug\MvcMusicStore.Tests.pdb
+C:\Users\ASUS\Documents\Visual Studio 2013\Projects\MvcMusicStore\MvcMusicStore.Tests\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\ASUS\Documents\Visual Studio 2013\Projects\MvcMusicStore\MvcMusicStore.Tests\bin\Debug\Microsoft.Owin.Security.Google.xml
