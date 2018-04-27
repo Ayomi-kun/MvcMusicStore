@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Home Page";
 }
+@Scripts.Render("~/bundles/jquery")
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -10,17 +11,23 @@
     <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
 </div>
 
-@section scripts{
+
     @if (ViewBag.UserName != null)
     {
         <script type="text/javascript">
+            
             $(function () {
                 var msg = 'Welcome, @ViewBag.UserName!';
-                $("#Welcome-Message").html(msg).show('slow');
+                alert('Hello world');
+                //$("#Welcome-Message").text(msg);
             });
         </script>
+        
     }
-}
+     
+    
+
+
 
 @*<div class="row">
     <div class="col-md-4">
