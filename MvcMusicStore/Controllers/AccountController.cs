@@ -374,7 +374,13 @@ namespace MvcMusicStore.Controllers
             }
             else
             {
+                // default
                 return RedirectToAction("Index", "Home");
+
+                // actions on for detected open redirect go here
+                //string message = string.Format("Open redirect to {0} detected.", returnUrl);
+                //ErrorSignal.FromCurrentContext().Raise(new System.Security.SecurityException(message));
+                //return RedirectToAction("SecurityWarning", "Home");
             }
         }
 
