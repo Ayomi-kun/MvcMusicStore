@@ -50,7 +50,8 @@ namespace MvcMusicStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="AlbumId,GenreId,ArtistId,Title,price,AlbumArtUrl")] Album album)
+        //public ActionResult Create([Bind(Include="AlbumId,GenreId,ArtistId,Title,price,AlbumArtUrl")] Album album)
+        public ActionResult Create(Album album)
         {
             if (ModelState.IsValid)
             {
